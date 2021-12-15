@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 
-export default function ListLink() {
+export default function SignUp() {
     return (
         <>
             <a href="" className="signup">

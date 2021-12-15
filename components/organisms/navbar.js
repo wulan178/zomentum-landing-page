@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import NavbarLink from '../atoms/Link/navbarLink'
 
 export default function Navbar() {
     return (
@@ -13,21 +14,11 @@ export default function Navbar() {
                     </button>
                     <div className="collapse navbar-collapse" id="navbarText">
                         <ul className="navbar-nav me-auto">
-                            <li className="nav-item">
-                                <a className="nav-link" aria-current="page" href="#">Features</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="#">Integrations</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="#">Pricing</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="#">Company</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="#">Blog</a>
-                            </li>
+                            <NavbarLink active href="" text="Features" />
+                            <NavbarLink href="" text="Integrations" />
+                            <NavbarLink href="" text="Pricing" />
+                            <NavbarLink href="" text="Company" />
+                            <NavbarLink href="" text="Blog" />
                             <li className="nav-item">
                                 <a className="btn demo" href="#">Get a demo</a>
                             </li>
@@ -35,7 +26,7 @@ export default function Navbar() {
                                 <a className="btn px-0 login" href="#">
                                     <Image src="/icons/login.svg" width={18} height={18} />
                                     <span className="login-text">Login</span>
-                                </a>                            
+                                </a>
                             </li>
                         </ul>
                     </div>
